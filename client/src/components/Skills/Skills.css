@@ -1,0 +1,229 @@
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  background: #030712;
+  padding: 110px 10%;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.skills-subtitle {
+  color: #3b82f6;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills-header h1 {
+  font-size: 55px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.skills-description {
+  max-width: 700px;
+  margin: auto;
+  color: #94a3b8;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.skill-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  padding: 30px;
+  transition: all 0.35s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
+  box-shadow: 0 15px 35px rgba(59,130,246,0.25);
+}
+
+.skill-card h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.badges span {
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.badges span:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* ===========================
+   COLORS
+=========================== */
+
+.html {
+  background: rgba(227,79,38,.18);
+  color: #E34F26;
+}
+
+.css {
+  background: rgba(21,114,182,.18);
+  color: #1572B6;
+}
+
+.js {
+  background: rgba(247,223,30,.18);
+  color: #F7DF1E;
+}
+
+.react {
+  background: rgba(97,218,251,.18);
+  color: #61DAFB;
+}
+
+.node {
+  background: rgba(104,160,99,.18);
+  color: #68A063;
+}
+
+.express {
+  background: rgba(255,255,255,.12);
+  color: white;
+}
+
+.api {
+  background: rgba(59,130,246,.18);
+  color: #60A5FA;
+}
+
+.mysql {
+  background: rgba(0,92,132,.18);
+  color: #4FC3F7;
+}
+
+.sql {
+  background: rgba(37,99,235,.18);
+  color: #60A5FA;
+}
+
+.java {
+  background: rgba(248,152,32,.18);
+  color: #F89820;
+}
+
+.python {
+  background: rgba(55,118,171,.18);
+  color: #4FC3F7;
+}
+
+.cpp {
+  background: rgba(0,89,156,.18);
+  color: #5DADE2;
+}
+
+.c {
+  background: rgba(100,116,139,.18);
+  color: #CBD5E1;
+}
+
+.git {
+  background: rgba(240,80,50,.18);
+  color: #F05032;
+}
+
+.github {
+  background: rgba(255,255,255,.12);
+  color: white;
+}
+
+.vscode {
+  background: rgba(0,122,204,.18);
+  color: #29B6F6;
+}
+
+.postman {
+  background: rgba(255,108,55,.18);
+  color: #FF6C37;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .skills {
+    padding: 90px 8%;
+  }
+
+  .skills-header h1 {
+    font-size: 46px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-header h1 {
+    font-size: 38px;
+  }
+
+  .skills-description {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .skill-card {
+    padding: 22px;
+  }
+
+  .badges span {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+}

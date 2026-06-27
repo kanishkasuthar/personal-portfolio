@@ -1,0 +1,179 @@
+/* ===========================
+          FOOTER
+=========================== */
+
+.footer{
+    width:100%;
+    background:#030712;
+    padding:60px 8% 30px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+/* ===========================
+      FOOTER CONTAINER
+=========================== */
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+/* ===========================
+      LEFT
+=========================== */
+
+.footer-left h2{
+    color:#fff;
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.footer-left p{
+    color:#94a3b8;
+    line-height:1.8;
+    max-width:420px;
+}
+
+/* ===========================
+      LINKS
+=========================== */
+
+.footer-links h3,
+.footer-social h3{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.footer-links a{
+    color:#94a3b8;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#3b82f6;
+    padding-left:8px;
+}
+
+/* ===========================
+      SOCIAL
+=========================== */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    background:#111827;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:18px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+    transform:translateY(-5px);
+}
+
+/* ===========================
+      LINE
+=========================== */
+
+.footer hr{
+    margin:45px 0 20px;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+/* ===========================
+      BOTTOM
+=========================== */
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-bottom p{
+    color:#94a3b8;
+    font-size:15px;
+}
+
+.footer-bottom button{
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    color:white;
+    background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+    transition:.3s;
+}
+
+.footer-bottom button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(59,130,246,.35);
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.footer-left p{
+    margin:auto;
+}
+
+.footer-links{
+    align-items:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    gap:20px;
+}
+
+}
+
+@media(max-width:500px){
+
+.footer{
+    padding:50px 6% 25px;
+}
+
+.footer-left h2{
+    font-size:26px;
+}
+
+.footer-bottom p{
+    text-align:center;
+    font-size:14px;
+}
+
+}

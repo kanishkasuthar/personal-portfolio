@@ -1,0 +1,299 @@
+/* ===========================
+        EDUCATION
+=========================== */
+
+.education{
+    width:100%;
+    min-height:100vh;
+    background:#030712;
+    padding:100px 8%;
+}
+
+/* ===========================
+        TITLE
+=========================== */
+
+.education-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.education-title span{
+    color:#3b82f6;
+    font-size:15px;
+    letter-spacing:3px;
+    font-weight:600;
+}
+
+.education-title h1{
+    color:#fff;
+    font-size:48px;
+    margin:15px 0;
+}
+
+.education-title p{
+    color:#94a3b8;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* ===========================
+      MAIN CARD
+=========================== */
+
+.education-card{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:35px;
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.education-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(90deg,#3b82f6,#8b5cf6);
+}
+
+.education-card:hover{
+    transform:translateY(-6px);
+    border-color:#3b82f6;
+    box-shadow:0 15px 30px rgba(59,130,246,.18);
+}
+
+/* ===========================
+        ICON
+=========================== */
+
+.degree-icon{
+    width:70px;
+    height:70px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+/* ===========================
+      DEGREE DETAILS
+=========================== */
+
+.degree-content h2{
+    color:white;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.degree-content h3{
+    color:#38bdf8;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.degree-content h4{
+    color:#cbd5e1;
+    font-size:18px;
+    font-weight:500;
+    margin-bottom:25px;
+}
+
+/* ===========================
+      UNIVERSITY DETAILS
+=========================== */
+
+.details{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.details p{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#94a3b8;
+    font-size:15px;
+}
+
+/* ===========================
+        CGPA CARD
+=========================== */
+
+.education-stats{
+    display:flex;
+    justify-content:center;
+    margin-bottom:50px;
+}
+
+.stat{
+    width:220px;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.35s;
+}
+
+.stat:hover{
+    transform:translateY(-6px);
+    border-color:#3b82f6;
+    box-shadow:0 15px 30px rgba(59,130,246,.18);
+}
+
+.stat svg{
+    color:#3b82f6;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.stat h2{
+    color:white;
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.stat span{
+    color:#94a3b8;
+    font-size:15px;
+}
+
+/* ===========================
+   PREVIOUS EDUCATION
+=========================== */
+
+.previous-education h2{
+    color:white;
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.previous-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:22px 28px;
+    margin-bottom:20px;
+    transition:.35s;
+}
+
+.previous-card:hover{
+    transform:translateX(8px);
+    border-color:#3b82f6;
+}
+
+.previous-card h3{
+    color:white;
+    margin-bottom:8px;
+}
+
+.previous-card p{
+    color:#94a3b8;
+}
+
+.previous-card span{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.education{
+    padding:80px 6%;
+}
+
+.education-title h1{
+    font-size:40px;
+}
+
+.education-card{
+    padding:28px;
+}
+
+.degree-content h2{
+    font-size:26px;
+}
+
+.degree-content h3{
+    font-size:20px;
+}
+
+.degree-content h4{
+    font-size:16px;
+}
+
+.details{
+    flex-direction:column;
+    gap:15px;
+}
+
+.previous-card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.stat{
+    width:100%;
+    max-width:250px;
+}
+
+}
+
+@media(max-width:500px){
+
+.education{
+    padding:70px 5%;
+}
+
+.education-title h1{
+    font-size:34px;
+}
+
+.degree-icon{
+    width:60px;
+    height:60px;
+    font-size:24px;
+}
+
+.degree-content h2{
+    font-size:22px;
+}
+
+.degree-content h3{
+    font-size:18px;
+}
+
+.degree-content h4{
+    font-size:15px;
+}
+
+.stat h2{
+    font-size:34px;
+}
+
+.previous-education h2{
+    font-size:24px;
+}
+
+}
